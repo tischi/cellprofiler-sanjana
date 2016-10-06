@@ -4,6 +4,10 @@
 
 This automated image analysis workflow finds nuclei in fluorescence images (DAPI stain) and measures the fluorescence intensity (transient transfection of a YFP-tagged protein) around each nucleus. Based on the measured intensity cells are classified as transfected or untransfected. The Motivation to develop this workflow was to measure the transfection efficiency of the YFP-tagged protein.
 
+## Teaching material
+
+https://www.youtube.com/watch?v=IXsTba9Nxok
+
 
 ## Prerequisites
 
