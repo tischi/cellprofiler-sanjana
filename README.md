@@ -32,6 +32,15 @@ Neg9-siRNA  +                  + CopII_2nd_AB-A647 (2 Wells)
 
 Widefield is better for total A647 per cell quantification; usually 20x/0.75 air lens is good enough to see Golgi condensation changes, in fact for the morphological quantification lower NA (e.g. 20x/0.3) is even better because the whole Golgi is in focus; disadvantage of lower NA is that you collect less light; thus you will need more exposure times.
 
+#### Adjust settings
+
+Adjust the A647-CopII channel in a well with Neg9, because there it should be the brightest; choose settings such that the brightest pixels are around 2000 gray values for the 12bit camera where the maximum is 4095.
+
+Adjust the GFP-Golgi channel in a well with Neg9, because there it should be the brightest, because it is condensed; choose settings such that the brightest pixels are around 2000 gray values for the 12bit camera where the maximum is 4095.
+
+### Data management
+
+For ScanR data please use the "Transfer tool" to have meaningful filenames and get rid of the unsigned int issue (32768) and get your data scaled from 0 to 4095.
 
 ### Plots to check the outcome
 
@@ -63,10 +72,9 @@ https://www.youtube.com/watch?v=IXsTba9Nxok
 
 ## CellProfiler modules that may need adaptation
 
-#### Image 
+#### LoadImages
 
-Drag and Drop the folder with the data to be analysed.
-
+Input image file location: folder with your data (can contain subfolders)
 
 #### NamesAndTypes 
 
